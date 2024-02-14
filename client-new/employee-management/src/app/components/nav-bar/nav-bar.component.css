@@ -1,0 +1,27 @@
+:host {
+    --background-color: #219EBC;
+    --button-color: #FB8500;
+}
+
+
+.nav {
+    display: flex;
+    background-color: var(--background-color);
+    background-image: linear-gradient(to top left,  #7be2fc, var(--background-color)); /* Linear gradient */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-header {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.signup {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--button-color);
+    text-color: #000000;
+    
+}
