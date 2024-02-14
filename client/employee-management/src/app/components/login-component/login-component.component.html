@@ -1,1 +1,10 @@
-<p>login-component works!</p>
+<!-- login.component.html -->
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+        <input type="email" placeholder="Email" [(ngModel)]="email" required>
+        <input type="password" placeholder="Password" [(ngModel)]="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div *ngIf="error" style="color: red; margin-top: 10px;">{{ error }}</div>
+</div>
